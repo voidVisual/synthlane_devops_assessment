@@ -233,15 +233,6 @@ Helm will update the deployment, trigger a pod restart, and inject the OIDC conf
 
 ---
 
-## References
-
-- [K3s Documentation](https://rancher.com/docs/k3s/latest/en/)
-- [Helm Documentation](https://helm.sh/docs/)
-- [OIDC Kubernetes Auth](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#openid-connect-tokens)
-
-
----
-
 ## Part 5: Ownership Questions
 
 ### 1. Production Readiness
@@ -309,4 +300,9 @@ Helm will update the deployment, trigger a pod restart, and inject the OIDC conf
 3. Use an initContainer or startup script to update the trust store.
 4. Automate this via Helm values and templates for consistency across environments.
 5. Document the process and rotate the CA if needed.
+---
+## References
 
+- [K3s Documentation](https://rancher.com/docs/k3s/latest/en/)
+- [Helm Documentation](https://helm.sh/docs/)
+- [OIDC Kubernetes Auth](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#openid-connect-tokens)
