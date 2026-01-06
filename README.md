@@ -106,13 +106,7 @@ kubectl get pods -A
 ```
 You should see system pods (coredns, local-path-provisioner, metrics-server, traefik) in the kube-system namespace. This confirms control plane, networking, and DNS are working.
 
-### Step 6: (Optional) Professional Touch
-Install bash completion and enable kubectl autocomplete:
-```sh
-sudo apt install -y bash-completion
-echo 'source <(kubectl completion bash)' >> ~/.bashrc
-source ~/.bashrc
-```
+
 
 #### Cluster Status Summary
 - Single-node Kubernetes cluster
